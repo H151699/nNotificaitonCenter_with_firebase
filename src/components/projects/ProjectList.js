@@ -12,7 +12,7 @@ const ProjectList = () => {
                     <p className="grey-text">3rd September, 2am</p>
                 </div>
 
-            </div>
+             </div>
 
        
 
