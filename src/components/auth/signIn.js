@@ -3,19 +3,27 @@ import React, { Component } from 'react'
 class signIn extends Component {
 
     state={
+        email:'',
+        password:''
         
     }
     handleChange=(e)=>{
-        console.log(e);
+
+        this.setState({
+
+            [e.target.id]: e.target.value 
+        })
     }
+
     handleSubmit=(e)=>{
-        console.log(e);
+        e.preventDefault(); // 
+        console.log(this.state)
     }
 
     render() {
     return (
       <div className="container">
-        <form onSubmit={this.handleSubmit}className="white">
+        <form onSubmit={this.handleSubmit} className="white">
             <h5 className="grey-text text-darken-3"> Sign In</h5>
             <div className="input-field"> 
                 <label htmlFor="email"> Email</label>
